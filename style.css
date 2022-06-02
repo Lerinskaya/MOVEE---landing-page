@@ -160,6 +160,207 @@ button:hover {
     width: 100%;
 }
 
+.container_question {
+    max-width: 69rem;
+    margin: 0 auto;
+}
+
+
+.question {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+.question h2 {
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+
+.question_field {
+    flex-direction: column;
+    padding-top: 3rem;
+}
+
+
+.question__first-block {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.question__first-block p {
+    margin-bottom: 4.75rem;
+}
+
+.point {
+    display: flex;
+    max-width: 30rem;
+}
+
+.point span {
+    font-weight: 300;
+    font-size: 3.125rem;
+    margin-right: 2.5rem;
+    text-shadow: 1.5px 1.5px var(--yellow);
+}
+
+.point h3 {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.point p {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.question__second-block {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.question__second-block p {
+    margin-bottom: 6rem;
+}
+
+.vector {
+    display: none;
+}
+
+.price_head {
+    display: flex;
+    justify-content: center;
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+
+.another__price {
+    display: none;
+}
+
+.price__fix {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.all_prices {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 3rem auto;
+    max-width: 82rem;
+}
+
+.price_info {
+    margin-top: 4rem;
+    line-height: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+.price_variant {
+    max-width: 26rem;
+    max-height: 36rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid var(--grey);
+    margin: 0 auto;
+    padding: 0 3rem;
+
+}
+
+.price_variant:hover {
+    box-shadow: 0px 12px 25px var(--black);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.price_variant_second:hover {
+    box-shadow: 0px 12px 25px var(--black);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.price_info:hover {
+    font-weight: 700;
+}
+
+.price_variant_second {
+    max-width: 26rem;
+    max-height: 36rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid var(--yellow);
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.room {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 2rem;
+}
+
+.price_info p {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.5rem;
+}
+
+.price_appart {
+    display: flex;
+    justify-content: center;
+    font-size: 1.9rem;
+    font-weight: 600;
+    padding: 2rem;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.button_price {
+    width: 15.6rem;
+    height: 3.2rem;
+    border: none;
+    background-color: var(--yellow);
+    justify-content: center;
+}
+
+.button_price a {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.button_price:hover {
+    box-shadow: 0px 4px 24px var(--yellow);
+    color: var(--white);
+    background-color: var(--yellow);
+}
+
+.button_price a:hover {
+    color: var(--white);
+}
+
+.without__things {
+    display: none;
+}
+
+
+
+
 @media (max-width: 1200px) {
     .banner_image {
         margin: 4rem auto 0 auto;
@@ -167,6 +368,19 @@ button:hover {
 
     .banner_plus {
         flex-wrap: wrap;
+    }
+
+    .room {
+        font-size: 1.5rem;
+        text-align: center;
+
+    }
+
+    .price_variant,
+    .price_variant_second {
+        max-width: 20rem;
+        max-height: 30rem;
+        padding: 0 2rem;
     }
 }
 
@@ -182,9 +396,40 @@ button:hover {
     .banner_title p {
         font-size: 1.8rem;
     }
+
+    .price_variant,
+    .price_variant_second {
+        max-width: 17rem;
+        max-height: 27rem;
+        padding: 0 1rem;
+    }
+
+    .room,
+    .price_appart {
+        font-size: 1rem;
+        padding: 1rem;
+    }
 }
 
+@media (max-width: 850px) {
 
+    .price_variant,
+    .price_variant_second {
+        max-width: 14rem;
+        max-height: 23rem;
+        padding: 0 0.5rem;
+    }
+
+    .room,
+    .price_appart {
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .price_info p {
+        font-size: 0.7rem;
+    }
+}
 
 @media (max-width: 768px) {
 
@@ -276,6 +521,91 @@ button:hover {
         font-weight: 600;
         font-size: 1.9rem;
     }
+
+    .price_container {
+        padding: 1rem;
+        background-color: #F8FBFF;
+    }
+
+    .question_field {
+        max-width: 90%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .point {
+        max-width: 90%;
+        text-align: left;
+        margin-left: 4rem;
+    }
+
+    .question__first-block {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .question__second-block {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4rem;
+    }
+
+    .point span {
+        font-size: 5.6rem;
+        font-weight: 300;
+    }
+
+    .point p {
+        margin-bottom: 2.4rem;
+    }
+
+    .price_variant {
+        display: none;
+    }
+
+    .price_variant_second {
+        max-width: 48rem;
+        padding: 0 0.5rem;
+        border: none;
+    }
+
+    .room {
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 1.5rem;
+    }
+
+    .price_appart {
+        font-size: 1.9rem;
+        font-weight: 600;
+        padding: 1.5rem;
+    }
+
+    .price_info p {
+        font-size: 1.125rem;
+        padding: 1rem;
+    }
+
+    .price__fix {
+        padding: 0 7rem;
+        text-align: center;
+    }
+
+    .another__price {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    .all_prices {
+        padding: 2rem;
+    }
 }
 
 @media (max-width: 500px) {
@@ -309,6 +639,15 @@ button:hover {
     .button_border {
         width: 19rem;
         height: 4rem;
+    }
+
+    .price__fix {
+        font-size: 1.3rem;
+        padding: 0 4rem;
+    }
+
+    .point span {
+        font-size: 4rem;
     }
 }
 
@@ -354,6 +693,99 @@ button:hover {
         width: 18.25rem;
         height: 3.74rem;
     }
+
+    .point {
+        width: 100%;
+        margin-left: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .question_field {
+        padding-top: 2rem;
+    }
+
+    .question__first-block {
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .vector {
+        display: flex;
+        align-items: center;
+    }
+
+    .different__point {
+        width: 200px;
+        text-align: left;
+    }
+
+    .things {
+        display: none;
+    }
+
+    .without__things {
+        display: block;
+    }
+
+    .point p {
+        display: none;
+    }
+
+    .point span {
+        font-size: 3.1rem;
+        text-align: center;
+        margin: 0 1rem 0 0;
+    }
+
+    .question h2 {
+        font-size: 1.25rem;
+    }
+
+    .point h3 {
+        font-size: 1rem;
+    }
+
+    .price_head {
+        font-size: 1.25rem;
+    }
+
+    .all_prices {
+        padding: 0;
+        margin-top: -1rem;
+    }
+
+    .price__fix {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .room {
+        font-size: 1.125rem;
+    }
+
+
+    .price_info {
+        line-height: 1.5rem;
+    }
+
+    .price_info p {
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .price_appart {
+        font-size: 1.9rem;
+        font-weight: 600;
+    }
+
+    .price_variant:hover {
+        box-shadow: none;
+    }
+
+    .price_variant_second:hover {
+        box-shadow: none;
+    }
 }
 
 @media (max-width: 320px) {
@@ -380,5 +812,32 @@ button:hover {
 
     .main_button {
         font-size: 1.25rem;
+    }
+
+    .question h2 {
+        margin-bottom: 0;
+        margin-top: -2rem;
+    }
+
+    .question__second-block {
+        margin-bottom: 1rem;
+    }
+
+    .question__first-block {
+        margin-bottom: 0;
+    }
+
+    .question_field {
+        max-width: none;
+        margin: -1rem 0.3rem 2rem 0.3rem;
+    }
+
+    .another__price {
+        font-size: 1rem;
+    }
+
+
+    .point h3 {
+        font-size: 0.8rem;
     }
 }
