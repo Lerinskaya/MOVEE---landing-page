@@ -178,24 +178,15 @@ button:hover {
 }
 
 .question_field {
-    flex-direction: column;
-    padding-top: 3rem;
-}
-
-
-.question__first-block {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.question__first-block p {
-    margin-bottom: 4.75rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .point {
     display: flex;
-    max-width: 30rem;
 }
 
 .point span {
@@ -215,18 +206,13 @@ button:hover {
     font-size: 1rem;
 }
 
-.question__second-block {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.question__second-block p {
-    margin-bottom: 6rem;
-}
-
 .vector {
     display: none;
+}
+
+.price_container {
+    max-width: 1305px;
+    margin: 0 auto;
 }
 
 .price_head {
@@ -250,54 +236,51 @@ button:hover {
 .all_prices {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto 3rem auto;
-    max-width: 82rem;
-}
-
-.price_info {
-    margin-top: 4rem;
-    line-height: 1rem;
-    margin-bottom: 2rem;
 
 }
 
-.price_variant {
+.price_card {
     max-width: 26rem;
-    max-height: 36rem;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     border: 1px solid var(--grey);
-    margin: 0 auto;
-    padding: 0 3rem;
+    margin-right: 24px;
 
 }
 
-.price_variant:hover {
-    box-shadow: 0px 12px 25px var(--black);
+.price_card:hover {
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+    ;
     cursor: pointer;
     font-weight: 700;
 }
 
-.price_variant_second:hover {
-    box-shadow: 0px 12px 25px var(--black);
+.price_card:hover p {
+    font-weight: 700;
+}
+
+.price_card_second:hover {
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+    ;
     cursor: pointer;
     font-weight: 700;
 }
 
-.price_info:hover {
+.price_card_second:hover p {
     font-weight: 700;
 }
 
-.price_variant_second {
+
+.price_card_second {
     max-width: 26rem;
-    max-height: 36rem;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     border: 1px solid var(--yellow);
-    margin: 0 auto;
-    padding: 0 3rem;
+    margin-right: 1.5rem;
 }
 
 .room {
@@ -350,7 +333,7 @@ button:hover {
     background-color: var(--yellow);
 }
 
-.button_price a:hover {
+.button_price:hover a {
     color: var(--white);
 }
 
@@ -376,10 +359,8 @@ button:hover {
 
     }
 
-    .price_variant,
-    .price_variant_second {
-        max-width: 20rem;
-        max-height: 30rem;
+    .price_card,
+    .price_card_second {
         padding: 0 2rem;
     }
 }
@@ -397,10 +378,14 @@ button:hover {
         font-size: 1.8rem;
     }
 
-    .price_variant,
-    .price_variant_second {
+    .question_field {
+        max-width: 900px;
+    }
+
+    .price_card,
+    .price_card_second {
         max-width: 17rem;
-        max-height: 27rem;
+        margin: 1rem;
         padding: 0 1rem;
     }
 
@@ -411,19 +396,35 @@ button:hover {
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 880px) {
 
-    .price_variant,
-    .price_variant_second {
+    .price_card,
+    .price_card_second {
+        max-width: 16rem;
+    }
+
+    .question_field {
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .question_field {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .price_card,
+    .price_card_second {
         max-width: 14rem;
-        max-height: 23rem;
-        padding: 0 0.5rem;
+        padding: 1rem;
     }
 
     .room,
     .price_appart {
         font-size: 1rem;
-        padding: 0;
+        padding: 1rem;
     }
 
     .price_info p {
@@ -527,31 +528,22 @@ button:hover {
         background-color: #F8FBFF;
     }
 
+    .container_question {
+        margin: 1rem;
+    }
+
     .question_field {
-        max-width: 90%;
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: minmax(100px, max-content);
+        gap: 16px;
         margin: 0 auto;
     }
+
 
     .point {
         max-width: 90%;
         text-align: left;
         margin-left: 4rem;
-    }
-
-    .question__first-block {
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 0;
-    }
-
-    .question__second-block {
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 4rem;
     }
 
     .point span {
@@ -560,14 +552,15 @@ button:hover {
     }
 
     .point p {
+
         margin-bottom: 2.4rem;
     }
 
-    .price_variant {
+    .price_card {
         display: none;
     }
 
-    .price_variant_second {
+    .price_card_second {
         max-width: 48rem;
         padding: 0 0.5rem;
         border: none;
@@ -629,6 +622,15 @@ button:hover {
     .main_button {
         width: 19rem;
         height: 4rem;
+    }
+
+    .question h2 {
+        font-size: 1.4rem;
+
+    }
+
+    .point {
+        margin: 1rem;
     }
 
     .main_button a {
@@ -696,18 +698,19 @@ button:hover {
 
     .point {
         width: 100%;
-        margin-left: 0.5rem;
+        margin: 0.5rem;
         display: flex;
         justify-content: space-between;
     }
 
     .question_field {
-        padding-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
     }
 
-    .question__first-block {
-        margin-bottom: 1rem;
-        flex-wrap: wrap;
+    .question {
+        margin-top: 3rem;
     }
 
     .vector {
@@ -738,6 +741,10 @@ button:hover {
         margin: 0 1rem 0 0;
     }
 
+    .container_question {
+        margin: 1rem;
+    }
+
     .question h2 {
         font-size: 1.25rem;
     }
@@ -752,6 +759,7 @@ button:hover {
 
     .all_prices {
         padding: 0;
+
         margin-top: -1rem;
     }
 
@@ -779,11 +787,11 @@ button:hover {
         font-weight: 600;
     }
 
-    .price_variant:hover {
+    .price_card:hover {
         box-shadow: none;
     }
 
-    .price_variant_second:hover {
+    .price_card_second:hover {
         box-shadow: none;
     }
 }
@@ -814,28 +822,18 @@ button:hover {
         font-size: 1.25rem;
     }
 
-    .question h2 {
-        margin-bottom: 0;
-        margin-top: -2rem;
-    }
+    .container_question {
+        margin: 0 0.7rem 0.7rem;
 
-    .question__second-block {
-        margin-bottom: 1rem;
-    }
-
-    .question__first-block {
-        margin-bottom: 0;
     }
 
     .question_field {
-        max-width: none;
-        margin: -1rem 0.3rem 2rem 0.3rem;
+        gap: 8px;
     }
 
     .another__price {
         font-size: 1rem;
     }
-
 
     .point h3 {
         font-size: 0.8rem;
