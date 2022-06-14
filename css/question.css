@@ -1,0 +1,175 @@
+.question {
+    max-width: 69rem;
+    margin: 0 auto;
+}
+
+.question h2 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 4.1rem;
+}
+
+.question__field {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    max-width: 1280px;
+    margin: 0 auto 5rem auto;
+}
+
+.point {
+    display: flex;
+}
+
+.point span {
+    font-weight: 300;
+    font-size: 3.125rem;
+    margin-right: 2.5rem;
+    text-shadow: 1.5px 1.5px var(--yellow);
+}
+
+.point h3 {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.point p {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.vector {
+    display: none;
+}
+
+@media (max-width: 990px) {
+    .question__field {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 850px) {
+    .question__field {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .question {
+        margin: 1rem;
+    }
+
+    .question__field {
+        display: grid;
+        grid-template-columns: minmax(100px, max-content);
+        gap: 16px;
+        margin: 0 auto;
+    }
+
+    .point {
+        max-width: 90%;
+        text-align: left;
+        margin-left: 4rem;
+    }
+
+    .point span {
+        font-size: 5.6rem;
+        font-weight: 300;
+    }
+
+    .point p {
+        margin-bottom: 2.4rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .question h2 {
+        font-size: 1.4rem;
+    }
+
+    .point {
+        margin: 1rem;
+    }
+
+    .point span {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 365px) {
+    .point {
+        width: 100%;
+        margin: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .question__field {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .question h2 {
+        margin-top: 3rem;
+    }
+
+    .vector {
+        display: flex;
+        align-items: center;
+    }
+
+    .different__point {
+        width: 200px;
+        text-align: left;
+    }
+
+    .things {
+        display: none;
+    }
+
+    .without__things {
+        display: block;
+    }
+
+    .point p {
+        display: none;
+    }
+
+    .point span {
+        font-size: 3.1rem;
+        text-align: center;
+        margin: 0 1rem 0 0;
+    }
+
+    .question {
+        margin: 1rem;
+    }
+
+    .question h2 {
+        font-size: 1.25rem;
+    }
+
+    .point h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .question {
+        margin: 0 0.7rem 0.7rem;
+    }
+
+    .point h3 {
+        font-size: 0.8rem;
+    }
+
+    .question__field {
+        gap: 8px;
+    }
+}

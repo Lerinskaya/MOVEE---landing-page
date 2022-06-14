@@ -1,9 +1,4 @@
-@import "general.css";
-@import "header.css";
-@import "question.css";
-@import "price.css";
-
-/* * {
+* {
     box-sizing: border-box;
 }
 
@@ -873,4 +868,4 @@ button:hover {
     .point h3 {
         font-size: 0.8rem;
     }
-} */
+}
