@@ -1,27 +1,9 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
-    font-family: "Montserrat", san-serif;
-    --yellow: #fed100;
-    --red: #ff352b;
-    --white: #f2f2f2;
-    --orange: rgba(255, 119, 43, 1);
-    --black: #000;
-    --orange2: #ff772b;
-    --grey: #EBEBEB;
-}
-
-.banner_image_adapt img,
-.banner_img_adapt img {
+.banner__image__adapt img,
+.banner__img__adapt img {
     display: none;
 }
 
-.image_menu {
+.image__menu {
     display: none;
 }
 
@@ -34,7 +16,7 @@ li {
     list-style-type: none;
 }
 
-.header_logo {
+.header__logo {
     font-size: 1.875rem;
     font-weight: 600;
 }
@@ -62,12 +44,12 @@ header {
     padding-top: 1rem;
 }
 
-.header_menu ul {
+.header__menu ul {
     display: flex;
     gap: 2rem;
 }
 
-.header_link {
+.header__link {
     font-size: 1.125rem;
     font-weight: 500;
 }
@@ -78,28 +60,28 @@ header {
     font-weight: 600;
 }
 
-.banner_info {
+.banner__info {
     flex: 0 1 50%;
 }
 
-.banner_content {
+.banner__content {
     display: flex;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
-.banner_main_title {
+.banner__main__title {
     font-size: 4rem;
     margin-bottom: 0;
 }
 
-.banner_title p {
+.banner__title p {
     font-size: 1.875rem;
     font-weight: 600;
     margin-bottom: 3rem;
 }
 
-.main_button {
+.main__button {
     background-color: var(--red);
     padding: 1rem 6rem;
     width: 18.25rem;
@@ -107,19 +89,19 @@ header {
     font-size: 1.5rem;
     border: none;
     position: absolute;
-    left: -10px;
-    top: -10px;
+    left: -0.625rem;
+    top: -0.625rem;
 }
 
-.button_border {
+.button__border {
     position: relative;
     width: 18.25rem;
     height: 3.75rem;
     margin: 0 0 2rem 0;
-    border: 2px solid var(--white)
+    border: 0.125rem solid var(--white)
 }
 
-.main_button a {
+.main__button a {
     color: var(--white);
     font-size: 1.5rem;
     font-weight: 600;
@@ -129,7 +111,7 @@ button:hover {
     background-color: var(--orange2);
 }
 
-.banner_plus {
+.banner__plus {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -141,32 +123,32 @@ button:hover {
     align-items: center;
 }
 
-.banner_plus p {
-    font-size: 1rem;
-    font-weight: 400;
-}
-
 .banner__plus-item img {
     margin-right: 0.5rem;
 }
 
-.banner_image {
+.banner__image {
     max-width: 32rem;
     margin: -4rem auto 0 auto;
     align-items: center;
 }
 
-.banner_image img {
+.banner__image img {
     width: 100%;
 }
 
 @media (max-width: 1200px) {
-    .banner_image {
+    .banner__image {
         margin: 4rem auto 0 auto;
     }
 
-    .banner_plus {
+    .banner__plus {
         flex-wrap: wrap;
+    }
+
+    .room {
+        font-size: 1.5rem;
+        text-align: center;
     }
 }
 
@@ -175,16 +157,14 @@ button:hover {
         font-size: 1.2rem;
     }
 
-    .banner_title {
+    .banner__title {
         font-size: 3rem;
     }
 
-    .banner_title p {
+    .banner__title p {
         font-size: 1.8rem;
     }
 }
-
-
 
 @media (max-width: 768px) {
 
@@ -198,71 +178,70 @@ button:hover {
         justify-content: space-between;
     }
 
-    .banner_plus {
+    .banner__plus {
         flex-wrap: nowrap;
     }
 
-    .banner_info,
-    .banner_content {
+    .banner__info,
+    .banner__content {
         display: flex;
         justify-content: center;
     }
 
-    .banner_title {
+    .banner__title {
         display: flex;
         justify-content: center;
         text-align: center;
         flex-direction: column;
     }
 
-    .banner_plus {
+    .banner__plus {
         display: flex;
         align-items: center;
         padding: 0;
         margin-bottom: 3.75rem;
     }
 
-    .header_logo {
+    .header__logo {
         font-size: 2rem;
         padding-left: 2rem;
     }
 
-    .image_menu {
+    .image__menu {
         display: block;
     }
 
-    .image_menu img {
+    .image__menu img {
         width: 5rem;
         padding: 0 1rem;
     }
 
-
-    .banner_info {
+    .banner__info {
         display: flex;
         align-items: center;
         flex-direction: column;
     }
 
-    .banner_image img,
-    .banner_image {
+    .banner__image img,
+    .banner__image {
         display: none;
     }
 
-    .banner_image_adapt img {
+    .banner__image__adapt img {
         display: flex;
         width: 17rem;
         margin-top: -3rem;
     }
 
-    .button_border {
+    .button__border {
         position: relative;
         width: 24rem;
         height: 4.75rem;
         margin: 0 0 2rem 0;
-        border: 2px solid var(--white)
+        border: 0.125rem solid var(--white)
     }
 
-    .main_button {
+    .main__button {
         background-color: var(--red);
         font-weight: 600;
         font-size: 1.25rem;
@@ -272,49 +251,33 @@ button:hover {
 
     }
 
-    .main_button a {
+    .main__button a {
         font-weight: 600;
         font-size: 1.9rem;
     }
 }
 
 @media (max-width: 500px) {
-    .banner_main_title {
+    .banner__main__title {
         font-size: 1.9rem;
     }
 
-    .banner_title p {
+    .banner__title p {
         font-size: 1.4rem;
     }
 
-    .header_logo {
+    .header__logo {
         font-size: 1.2rem;
     }
 
-    .banner_plus,
-    .banner_plus p {
+    .banner__plus,
+    .banner__plus p {
         display: none;
-    }
-
-    .main_button {
-        width: 19rem;
-        height: 4rem;
-    }
-
-    .main_button a {
-        font-weight: 600;
-        font-size: 1.7rem;
-    }
-
-    .button_border {
-        width: 19rem;
-        height: 4rem;
     }
 }
 
 @media (max-width: 365px) {
-
-    .header_logo {
+    .header__logo {
         font-size: 1rem;
         color: var(--black);
         padding-left: 2rem;
@@ -325,41 +288,39 @@ button:hover {
         height: 4rem;
     }
 
-    .banner_main_title {
+    .banner__main__title {
         font-size: 1.75rem;
     }
 
-    .banner_title p {
+    .banner__title p {
         font-size: 1.2rem;
     }
 
-    .banner_image_adapt img {
+    .banner__image__adapt img {
         display: block;
         width: 15.5rem;
         height: 24.75rem;
         margin-top: -3rem;
     }
 
-    .main_button {
+    .main__button {
         font-size: 1.25rem;
         width: 18.25rem;
         height: 3.74rem;
     }
 
-    .main_button a {
+    .main__button a {
         font-size: 1.5rem;
     }
 
-    .button_border {
+    .button__border {
         width: 18.25rem;
         height: 3.74rem;
     }
 }
 
 @media (max-width: 320px) {
-
-
-    .banner_info {
+    .banner__info {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -370,15 +331,15 @@ button:hover {
         height: 4rem;
     }
 
-    .banner_main_title {
+    .banner__main__title {
         font-size: 1.75rem;
     }
 
-    .banner_title p {
+    .banner__title p {
         font-size: 1.125rem;
     }
 
-    .main_button {
+    .main__button {
         font-size: 1.25rem;
     }
 }
