@@ -89,8 +89,8 @@ header {
     font-size: 1.5rem;
     border: none;
     position: absolute;
-    left: -10px;
-    top: -10px;
+    left: -0.625rem;
+    top: -0.625rem;
 }
 
 .button__border {
@@ -98,7 +98,7 @@ header {
     width: 18.25rem;
     height: 3.75rem;
     margin: 0 0 2rem 0;
-    border: 2px solid var(--white)
+    border: 0.125rem solid var(--white)
 }
 
 .main__button a {
@@ -121,11 +121,6 @@ button:hover {
 .banner__plus-item {
     display: flex;
     align-items: center;
-}
-
-.banner__plus p {
-    font-size: 1rem;
-    font-weight: 400;
 }
 
 .banner__plus-item img {
@@ -154,7 +149,6 @@ button:hover {
     .room {
         font-size: 1.5rem;
         text-align: center;
-
     }
 }
 
@@ -222,7 +216,6 @@ button:hover {
         padding: 0 1rem;
     }
 
-
     .banner__info {
         display: flex;
         align-items: center;
@@ -245,7 +238,7 @@ button:hover {
         width: 24rem;
         height: 4.75rem;
         margin: 0 0 2rem 0;
-        border: 2px solid var(--white)
+        border: 0.125rem solid var(--white)
     }
 
     .main__button {
@@ -284,7 +277,6 @@ button:hover {
 }
 
 @media (max-width: 365px) {
-
     .header__logo {
         font-size: 1rem;
         color: var(--black);

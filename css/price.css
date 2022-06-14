@@ -44,14 +44,18 @@
     flex-direction: column;
     margin-right: 1.5rem;
     padding: 5.25rem 5.5rem 5rem 5.1rem;
-    border: 1px solid var(--grey);
+    border: 0.0625rem solid var(--grey);
 }
 
 .price__card:hover {
-    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.75rem 1.56rem var(--black2);
     cursor: pointer;
     font-weight: 700;
-    border: 1px solid var(--yellow);
+    border: 0.0625rem solid var(--yellow);
+}
+
+.price__card:hover p {
+    font-weight: 700;
 }
 
 .room {
@@ -90,7 +94,7 @@
 }
 
 .button__price:hover {
-    box-shadow: 0px 4px 24px var(--yellow);
+    box-shadow: 0 0.25rem 1.5rem var(--yellow);
     color: var(--white);
     background-color: var(--yellow);
 }
@@ -104,7 +108,6 @@
 }
 
 @media (max-width: 1250px) {
-
     .all__prices {
         margin: 0 0 0 2rem;
     }
@@ -213,7 +216,7 @@
 @media (max-width: 768px) {
     .price__container {
         padding: 1rem;
-        background-color: #F8FBFF;
+        background-color: var(--lightGrey);
     }
 
     .price__card {
@@ -295,7 +298,6 @@
     .room {
         font-size: 1.125rem;
     }
-
 
     .price__info {
         line-height: 1.5rem;
