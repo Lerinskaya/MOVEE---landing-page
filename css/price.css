@@ -1,0 +1,327 @@
+.price__container {
+    max-width: 81.5rem;
+    margin: 0 auto 3rem auto;
+}
+
+.price__head {
+    display: flex;
+    justify-content: center;
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+
+.another__price {
+    display: none;
+}
+
+.price__fix {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+
+.all__prices {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.price__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.price__card {
+    max-width: 26rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 1.5rem;
+    padding: 5.25rem 5.5rem 5rem 5.1rem;
+    border: 0.0625rem solid var(--grey);
+}
+
+.price__card:hover {
+    box-shadow: 0 0.75rem 1.56rem var(--black2);
+    cursor: pointer;
+    font-weight: 700;
+    border: 0.0625rem solid var(--yellow);
+}
+
+.price__card:hover p {
+    font-weight: 700;
+}
+
+.room {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 3.75rem;
+}
+
+.price__info p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.6rem;
+}
+
+.price__appart {
+    display: flex;
+    justify-content: center;
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-top: 2.5rem;
+    margin-bottom: 3.25rem;
+}
+
+.button__price {
+    padding: 0.8rem 4.8rem;
+    border: none;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+}
+
+.button__price a {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.button__price:hover {
+    box-shadow: 0 0.25rem 1.5rem var(--yellow);
+    color: var(--white);
+    background-color: var(--yellow);
+}
+
+.button__price:hover a {
+    color: var(--white);
+}
+
+@media (max-width: 1250px) {
+    .all__prices {
+        margin: 0 0 0 2rem;
+    }
+
+    .price__card,
+    .price__card__second {
+        max-width: 23rem;
+    }
+
+    .price__card,
+    .price__card__second h4 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .price__card,
+    .price__card__second {
+        max-width: 20rem;
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media (max-width: 990px) {
+
+    .price__card,
+    .price__card__second {
+        max-width: 16rem;
+        margin: 1rem;
+    }
+
+    .price__card__second {
+        max-width: 16rem;
+        margin: 1rem;
+    }
+
+    .price__card p,
+    .price__card__second p {
+        margin-bottom: 1rem;
+    }
+
+    .price__card__second {
+        max-width: 16rem;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .room,
+    .price__appart {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .button__price {
+        max-width: 13rem;
+    }
+}
+
+@media (max-width: 880px) {
+
+    .price__card,
+    .price__card__second {
+        max-width: 16rem;
+    }
+
+    .question__field {
+        margin: 2rem 1rem;
+    }
+
+    .price__fix {
+        margin-bottom: 2rem;
+    }
+
+    .button__price {
+        max-width: 11rem;
+    }
+
+    .price__info p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .price__card,
+    .price__card__second {
+        max-width: 14rem;
+    }
+
+    .room,
+    .price__appart {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .price__appart {
+        margin-top: 1rem;
+    }
+
+    .price__info p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .price__container {
+        padding: 1rem;
+        background-color: var(--lightGrey);
+    }
+
+    .price__card {
+        max-width: 48rem;
+        padding: 0 0.5rem;
+        border: none;
+    }
+
+    .price__card:nth-child(odd) {
+        display: none;
+    }
+
+    .room {
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 0;
+    }
+
+    .price__appart {
+        font-size: 1.9rem;
+        font-weight: 600;
+        padding: 1.5rem;
+    }
+
+    .price__info p {
+        font-size: 1.125rem;
+        padding: 1rem;
+    }
+
+    .price__fix {
+        padding: 0 7rem;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .another__price {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    .all__prices {
+        margin: 0;
+        padding: 0;
+    }
+
+    .button__price {
+        text-align: center;
+        padding: 1.25rem 7rem;
+        margin-bottom: 1.2rem;
+        margin-left: -1.2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .price__fix {
+        font-size: 1.3rem;
+        padding: 0 4rem;
+    }
+}
+
+@media (max-width: 365px) {
+    .price__head {
+        font-size: 1.25rem;
+    }
+
+    .all__prices {
+        padding: 0;
+
+        margin-top: -1rem;
+    }
+
+    .price__fix {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .room {
+        font-size: 1.125rem;
+    }
+
+    .price__info {
+        line-height: 1.5rem;
+    }
+
+    .price__info p {
+        font-size: 1rem;
+        padding: 0;
+        line-height: 1.25rem;
+    }
+
+    .price__appart {
+        font-size: 1.9rem;
+        font-weight: 600;
+    }
+
+    .price__card:hover {
+        box-shadow: none;
+    }
+
+    .price__card__second:hover {
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .another__price {
+        font-size: 1rem;
+    }
+}
