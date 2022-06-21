@@ -1,0 +1,244 @@
+.container__footer {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 4.25rem 1rem 1rem 1rem;
+    display: flex;
+}
+
+.footer {
+    background-color: var(--yellow);
+}
+
+.info__footer {
+    max-width: 15rem;
+    margin-right: 15.5rem;
+}
+
+.logo__footer {
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-bottom: 2.75rem;
+}
+
+.info__footer p {
+    margin-top: 1rem;
+    margin-bottom: 2.25rem;
+}
+
+.footer_nav {
+    margin-right: 14.4rem;
+    margin-top: 1rem;
+}
+
+.footer_nav li {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact__button {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 15.7rem;
+    height: 2.75rem;
+    border: 0.125rem solid var(--grey);
+    background-color: var(--yellow);
+    margin-top: -2rem;
+    margin-bottom: 0.3rem;
+}
+
+.tel__footer {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+}
+
+.img__footer {
+    max-width: 19.4rem;
+    text-align: justify;
+}
+
+.img__footer a {
+    margin-right: 2.05rem;
+}
+
+.img__footer a:last-child {
+    margin-right: 0;
+}
+
+.info__adaptive {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .info__footer {
+        margin-right: 10rem;
+    }
+
+    .footer_nav {
+        margin-right: 8rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .info__footer {
+        margin-right: 2rem;
+    }
+
+    .footer_nav {
+        margin-right: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .info__adaptive {
+        display: block;
+        background-color: var(--white2);
+        text-align: center;
+    }
+
+    .city__footer {
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin-top: 3.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .tel__adaptive {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 0.75rem;
+    }
+
+    .email__adaptive {
+        font-size: 2rem;
+        font-weight: 400;
+        padding-bottom: 8.75rem;
+    }
+
+    .footer_nav {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footer_nav ul {
+        padding: 0;
+    }
+
+    .container__footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .contact__button {
+        margin: 0 auto 1rem auto;
+    }
+
+    .info__footer {
+        margin: 0 auto;
+        max-width: 25rem;
+    }
+
+    .info__footer p {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
+    }
+
+    .logo__footer {
+        font-size: 4rem;
+        font-weight: 600;
+        margin-bottom: 2.2rem;
+    }
+
+    .contacts {
+        flex-direction: column-reverse;
+    }
+
+    .img__footer {
+        margin: 1rem auto 2rem auto;
+    }
+
+    .tel__footer {
+        font-size: 2rem;
+    }
+
+    .footer_nav li {
+        font-size: 1.875rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .tel__footer {
+        font-size: 1.4rem;
+    }
+
+    .footer_nav li {
+        font-size: 1.2rem;
+    }
+
+    .logo__footer {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    .info__footer p {
+        font-size: 1.3rem;
+    }
+
+    .city__footer {
+        display: block;
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    .tel__adaptive {
+        font-size: 1rem;
+    }
+
+    .email__adaptive {
+        font-size: 1rem;
+        padding-bottom: 3.75rem;
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 365px) {
+    .tel__footer {
+        font-size: 1.1rem;
+    }
+
+    .logo__footer {
+        font-size: 1.875rem;
+    }
+
+    .info__footer p {
+        font-size: 1rem;
+    }
+
+    .city__footer {
+        font-size: 1rem;
+        margin-top: 1.4rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .tel__adaptive {
+        margin-bottom: 1.3rem;
+    }
+
+    .email__adaptive {
+        padding-bottom: 1.4rem;
+    }
+
+    .img__footer img {
+        max-width: 1.125rem;
+    }
+}
