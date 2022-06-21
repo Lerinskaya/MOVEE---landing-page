@@ -1,7 +1,10 @@
 .question {
     max-width: 69rem;
     margin: 0 auto;
+feature/CT-4
     padding: 0 1rem;
+
+ main
 }
 
 .question h2 {
@@ -56,10 +59,21 @@
 }
 
 @media (max-width: 768px) {
+feature/CT-4
+
+    .question {
+        margin: 1rem;
+    }
+
+main
     .question__field {
         display: grid;
         grid-template-columns: minmax(7.7rem, max-content);
         gap: 16px;
+ feature/CT-4
+
+        margin: 0 auto;
+ main
     }
 
     .point {
@@ -107,7 +121,10 @@
 
     .question h2 {
         margin-top: 3rem;
+feature/CT-4
         margin-bottom: 2rem;
+
+ main
     }
 
     .vector {
