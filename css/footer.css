@@ -120,6 +120,7 @@
         font-size: 2rem;
         font-weight: 400;
         padding-bottom: 8.75rem;
+        text-decoration: underline;
     }
 
     .footer_nav {
@@ -207,7 +208,6 @@
     .email__adaptive {
         font-size: 1rem;
         padding-bottom: 3.75rem;
-        text-decoration: underline;
     }
 }
 
