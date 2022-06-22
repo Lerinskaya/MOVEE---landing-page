@@ -1,8 +1,7 @@
 .price__container {
     max-width: 81.5rem;
     margin: 0 auto 3rem auto;
-feature/CT-4
-    padding: 0 1rem; main
+    padding: 0 1rem;
 }
 
 .price__head {
@@ -27,8 +26,6 @@ feature/CT-4
 .all__prices {
     display: flex;
     justify-content: space-between;
- feature/CT-4
-    main
 }
 
 .price__info {
@@ -39,20 +36,14 @@ feature/CT-4
 }
 
 .price__card {
- feature/CT-4
     max-width: 27rem;
-    max-width: 26rem;
-main
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-right: 1.5rem;
- feature/CT-4
     padding: 5.25rem 5rem 5rem 5.1rem;
-
-    main
     border: 0.0625rem solid var(--grey);
 }
 
@@ -68,10 +59,7 @@ main
 }
 
 .room {
- feature/CT-4
     font-size: 1.45rem;
-
-    font-size: 1.5rem;main
     font-weight: 600;
     margin-bottom: 3.75rem;
 }
@@ -113,10 +101,6 @@ main
 
 .button__price:hover a {
     color: var(--white);
-}
-
-.without__things {
-    display: none;
 }
 
 @media (max-width: 1250px) {
@@ -281,9 +265,7 @@ main
         text-align: center;
         padding: 1.25rem 7rem;
         margin-bottom: 1.2rem;
-feature/CT-4
         margin-left: -1.2rem;
-main
     }
 }
 

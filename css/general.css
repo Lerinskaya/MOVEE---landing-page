@@ -16,4 +16,6 @@ body {
     --grey: #EBEBEB;
     --black2: rgba(0, 0, 0, 0.15);
     --lightGrey: #F8FBFF;
+    --grey2: #333333;
+    --white2: #fff;
 }
