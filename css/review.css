@@ -1,0 +1,151 @@
+.review {
+    background-color: var(--yellow);
+}
+
+.review__container {
+    max-width: 82rem;
+    margin: 0 auto;
+    padding: 0 1rem 5.9rem 1rem;
+}
+
+.review__block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.6rem;
+}
+
+.review__title {
+    padding-top: 6.25rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3.5rem;
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+
+.review__text {
+    margin-right: 1.25rem;
+}
+
+.review__text p {
+    max-width: 26rem;
+}
+
+.read {
+    margin-top: 1.2rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.review__text h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.review__data {
+    margin-bottom: 1.25rem;
+}
+
+.review__button {
+    display: flex;
+    justify-content: center;
+}
+
+.review__button button {
+    padding: 0.8rem 4rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    background-color: var(--yellow);
+    border-color: var(--white);
+}
+
+.star__image {
+    display: flex;
+    max-width: 10rem;
+}
+
+.star__image img {
+    max-width: 0.94rem;
+    max-height: 0.93rem;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.star__image p {
+    margin-right: 0.5rem;
+}
+
+.more {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .check__circle-yellow {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .fake__yellow {
+        display: block;
+        width: 0.75rem;
+        height: 0.75rem;
+        border: 2px solid var(--black);
+        background-color: var(--black);
+        border-radius: 50%;
+        margin-right: 1rem;
+        position: relative;
+    }
+
+    .fake__yellow::after {
+        display: block;
+        content: '';
+        width: 1.3rem;
+        height: 1.3rem;
+        border: 0.2rem solid var(--yellow);
+        border-radius: 50%;
+        position: absolute;
+        opacity: 0;
+        margin: -0.6rem;
+    }
+
+    .checkbox:checked+.fake__yellow::after {
+        opacity: 1;
+    }
+
+    .car {
+        margin: 0;
+    }
+
+    .review__block {
+        flex-flow: column;
+        margin: 0 2rem;
+        justify-content: center;
+    }
+
+    .review__text {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 365px) {
+    .review__text:nth-child(odd) {
+        display: none;
+    }
+
+    .review__title {
+        padding-top: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .review__block {
+        margin: 0 0.5rem;
+    }
+
+    .review__text h3 {
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+}
