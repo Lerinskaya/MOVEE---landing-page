@@ -81,6 +81,16 @@
     display: none;
 }
 
+.open {
+    display: block;
+}
+
+.close {
+    display: none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .check__circle-yellow {
         display: flex;

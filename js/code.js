@@ -22,6 +22,7 @@ function btnClick() {
         panel.style.display = "grid";
     }
 }
+
 let vector = document.querySelector(".form__point-dop");
 vector.addEventListener("click", vectorHandler);
 function vectorHandler(e) {
@@ -32,22 +33,22 @@ const parent = document.querySelector(".review__block");
 const dots = document.querySelectorAll(".dots");
 const moreText = document.querySelectorAll(".more");
 const readMore = document.querySelectorAll(".read");
+const readLess = document.querySelectorAll(".close");
 parent.addEventListener("click", function (event) {
-    if (event.target.closest(".read")) {
-        myFunction();
-        console.log("click");
+    let el = event.target;
+    for (let i = 0; i < readMore.length; i++) {
+        if (el === readMore[i]) {
+            moreText[i].classList.toggle("open");
+            readMore[i].style.display = "none";
+            readLess[i].style.display = "block";
+            moreText[i].style.display = "inline";
+            dots[i].style.display = "none";
+        }
+        else {
+            readMore[i].style.display = "block";
+            readLess[i].style.display = "none";
+            dots[i].style.display = "inline";
+            moreText[i].style.display = "none";
+        }
     }
 });
-function myFunction() {
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        readMore.innerHTML = "Читать полноcтью";
-        moreText.style.display = "none";
-    } else {
-        dots.style.display = "none";
-        readMore.innerHTML = "Скрыть";
-        moreText.style.display = "inline";
-    }
-}
-
-

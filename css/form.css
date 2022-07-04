@@ -163,7 +163,6 @@
     display: grid;
     grid-template-columns: 14rem 22rem 7rem;
     margin-bottom: 4.5rem;
-    transition: 1s;
 }
 
 .checkbox__form {
@@ -261,22 +260,9 @@
     height: 0;
 }
 
-.map iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}
-
 .hidden {
     display: none;
 }
-
-/* .up.active {
-    margin-right: -2rem;
-    margin-top: -0.5rem;
-} */
 
 @media (max-width: 768px) {
     .timer {
