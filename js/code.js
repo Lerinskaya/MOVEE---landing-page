@@ -52,3 +52,70 @@ parent.addEventListener("click", function (event) {
         }
     }
 });
+
+let t = 21600;
+const timer = document.querySelector(".timer");
+
+setInterval(counter, 1000);
+
+
+function counter() {
+    t--;
+    let hours = Math.floor(t / 3600);
+    let minutes = Math.floor((t - hours * 3600) / 60);
+    let seconds = t % 60;
+    if (seconds <= 0) {
+        minutes--
+    };
+    if (minutes <= 0) {
+        hours--
+    };
+    if (hours <= 0) {
+        hours = 0
+    };
+    minutes = minutes < 10 && minutes >= 0 ? "0" + minutes : minutes;
+    seconds = seconds < 10 && seconds >= 0 ? "0" + seconds : seconds;
+    timer.innerHTML = `${hours}:${minutes}:${seconds}`;
+    if (t <= 0) {
+        document.querySelector(".timer").innerHTML = "Время вышло";
+        timer.style.fontSize = '3rem';
+    };
+}
+
+
+let form = document.querySelector('.form__place');
+let button = form.querySelector('.button__form');
+let info = form.querySelectorAll('.user__info');
+let city = form.querySelector('.user__city');
+let region = form.querySelector('.user__region');
+let payment = form.querySelector('.payment');
+let fields = form.querySelectorAll('.field');
+
+
+
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    console.log("clicked");
+    for (let i = 0; i < fields.length; i++) {
+        if (!fields[i].value) {
+            info[i].style.borderColor = 'red';
+        }
+    }
+});
+
+
+
+let option = document.createElement('option');
+let input = document.querySelector('.input');
+console.log(input.value);
+form.onsubmit = function (evt) {
+    evt.preventDefault();
+    option.textContent = input.value;
+    option.value = 'new__item';
+};
+
+document.querySelector('.user__city').add(option);
+
+
+
+

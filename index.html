@@ -35,7 +35,6 @@
                     <div class="menu__popup" id="menu">
                         <div class="logo__menu">
                             <p>MOVEE</p>
-                            <!-- <a href="#" class="hand"><img src="img/vector_right.png" alt="vector"></a> -->
                         </div>
                         <div class="main__point">
                             <p>Главная</p>
@@ -49,7 +48,6 @@
                         <div class="tel__menu"><a href="tel:8(029)-999-12-13">8(029)-999-12-13</a></div>
                     </div>
                 </div>
-                <!-- <div class="image__menu"><img src="img/menu.jpg" alt="menu"></div> -->
             </header>
             <section class="banner__content">
                 <div class="banner__info">
@@ -329,32 +327,33 @@
             <h2 class="form__title">Закажи переезд прямо сейчас со скидкой %</h2>
             <h2 class="form__title-hidden">Закажи переезд прямо сейчас</h2>
             <p class="under__title">Мы перезвоним в течении 10 секунд</p>
-            <div class="form__name">
-                <input type='text' name='user__name' value="" class='user__info' placeholder='Ваше имя' />
-                <input type='tel' name='user__phone' class='user__info' placeholder='Ваш телефон' />
-            </div>
             <form action="#" method="post" enctype="multipart/form-data" class="form__place">
+                <div class="form__name">
+                    <input type='text' name='user__name' value="" class='user__info field' placeholder='Ваше имя' />
+                    <input type='tel' name='user__phone' class='user__info field' placeholder='Ваш телефон' />
+                </div>
                 <div class="user__place">
                     <div class="region">
                         <p class="form__point">Укажите область</p>
-                        <select class="user__region" placeholder="Например">
-                            <option value="Например: Минская" class="example">Например: Минская</option>
+                        <select class="user__region field" placeholder="Например" required>
+                            <option value="Например: Минская" class="example" disabled>Например: Минская</option>
                             <option value="Минская">Минская</option>
                             <option value="Гомельская">Гомельская</option>
                             <option value="Витебская">Витебская</option>
                         </select>
                     </div>
-                    <div class="city">
+                    <div class="city" required>
                         <p class="form__point">Укажите город</p>
-                        <select class="user__city">
+                        <select class="user__city field">
                             <option value="1">Минск</option>
                             <option value="1">Мозырь</option>
                             <option value="1">Бобруйск</option>
                         </select>
+                        <input type="text" class='user__info input' placeholder='Добавить город'>
                     </div>
                 </div>
                 <p class="form__point">Способ оплаты</p>
-                <div class="payment">
+                <div class="payment field">
                     <label class="radio__button">
                         <input type="radio" name="radio__button">
                         <span class="fake__radio">Наличными курьеру</span>
@@ -396,11 +395,11 @@
                     </div>
                 </div>
                 <div class="timer__form">
-                    <span class="timer">05:37:25</span>
+                    <div class="timer"></div>
                     <div class="order__form">
                         <div class="button__form">
-                            <button class="button__order"><a href="#">Заказать со скидой</a></button>
-                            <button class="button__adaptive"><a href="#">Перезвонить мне</a></button>
+                            <button type="submit" class="button__order">Заказать со скидой</button>
+                            <button type="submit" class="button__adaptive">Перезвонить мне</button>
                         </div>
                         <label>
                             <input checked type="checkbox" name="checkbox__agree">

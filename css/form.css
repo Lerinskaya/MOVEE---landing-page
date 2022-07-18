@@ -21,7 +21,7 @@
     padding: 1rem;
     font-style: Montserrat;
     font-weight: 500;
-    border: none;
+    border-color: var(--transparent);
     border-bottom: 0.0625rem solid var(--grey2);
 }
 
@@ -205,12 +205,7 @@
 .timer {
     font-size: 6rem;
     margin-right: 4.1rem;
-}
-
-.button__form a {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--white);
+    width: 23.5rem;
 }
 
 .button__form {
@@ -230,6 +225,9 @@
     position: absolute;
     left: -0.625rem;
     top: -0.625rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
 }
 
 .button__adaptive {
