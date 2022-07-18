@@ -112,6 +112,7 @@ form.onsubmit = function (evt) {
     evt.preventDefault();
     option.textContent = input.value;
     option.value = 'new__item';
+    input.value = '';
 };
 
 document.querySelector('.user__city').add(option);
