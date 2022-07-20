@@ -118,5 +118,42 @@ form.onsubmit = function (evt) {
 document.querySelector('.user__city').add(option);
 
 
+let offset = 0;
+const slider = document.querySelector('.car__card');
+const right = document.querySelector('.vector__right');
+const left = document.querySelector('.vector__left');
 
+right.addEventListener('click', function () {
+    offset += 1024;
+    if (offset > 2048) {
+        offset = 0;
+    }
+    slider.style.left = -offset + 'px';
+});
+left.addEventListener('click', function () {
+    offset -= 1024;
+    if (offset < 0) {
+        offset = 2048;
+    }
+    slider.style.left = -offset + 'px';
+});
 
+const car = document.querySelector('.car__gazel');
+const van = document.querySelector('.car__van');
+const truck = document.querySelector('.car__truck');
+const cardCar = document.querySelector(".gazel");
+const cardVan = document.querySelector(".van");
+const cardTruck = document.querySelector(".truck");
+
+car.addEventListener('click', function () {
+    offset = 0;
+    slider.style.left = -offset + 'px';
+})
+van.addEventListener('click', function () {
+    offset = 1024;
+    slider.style.left = -offset + 'px';
+})
+truck.addEventListener('click', function () {
+    offset = 2048;
+    slider.style.left = -offset + 'px';
+});
