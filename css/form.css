@@ -22,6 +22,7 @@
     font-style: Montserrat;
     font-weight: 500;
     border-color: var(--transparent);
+    border: none;
     border-bottom: 0.0625rem solid var(--grey2);
 }
 
@@ -208,6 +209,12 @@
     width: 23.5rem;
 }
 
+.button__form a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
 .button__form {
     position: relative;
     width: 15.6rem;
@@ -253,6 +260,20 @@
 
 .hidden {
     display: none;
+
+.map {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 @media (max-width: 768px) {

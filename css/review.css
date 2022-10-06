@@ -35,6 +35,9 @@
     margin-top: 1.2rem;
     text-decoration: underline;
     cursor: pointer;
+.review__text a {
+    margin-top: 1.2rem;
+    text-decoration: underline;
 }
 
 .review__text h3 {
@@ -76,6 +79,7 @@
 .star__image p {
     margin-right: 0.5rem;
 }
+
 
 .more {
     display: none;
