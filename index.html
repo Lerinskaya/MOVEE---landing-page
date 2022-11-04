@@ -26,7 +26,28 @@
                     </ul>
                 </nav>
                 <div class="tel"><a href="tel:8(029)-999-12-13">8(029)-999-12-13</a></div>
-                <div class="image__menu"><img src="img/menu.jpg" alt="menu"></div>
+                <div class="burger__menu" id="burger">
+                    <span class="burger"></span>
+                    <span class="burger"></span>
+                    <span class="burger"></span>
+                </div>
+                <div class="popup">
+                    <div class="menu__popup" id="menu">
+                        <div class="logo__menu">
+                            <p>MOVEE</p>
+                        </div>
+                        <div class="main__point">
+                            <p>Главная</p>
+                        </div>
+                        <ul class="list__menu">
+                            <li>Цена</li>
+                            <li>Автопарк</li>
+                            <li>Отзывы</li>
+                            <li>Контакты</li>
+                        </ul>
+                        <div class="tel__menu"><a href="tel:8(029)-999-12-13">8(029)-999-12-13</a></div>
+                    </div>
+                </div>
             </header>
             <section class="banner__content">
                 <div class="banner__info">
@@ -161,55 +182,113 @@
         <h2 class="car_head">Автопарк</h2>
         <p class="car__text">10 видов автомобилей от 800 кг до 10 тонн</p>
         <div class="car__kind">
-            <div class="car">
+            <div class="car car__gazel">
                 <p>Газели</p>
             </div>
-            <div class="car">
+            <div class="car car__van">
                 <p>Каблуки</p>
             </div>
-            <div class="car">
+            <div class="car car__truck">
                 <p>Грузовики</p>
             </div>
         </div>
-        <div class="car__card">
-            <div class="vector__left"><img src="img/vector-left.png" alt="vector"></div>
-            <div class="car__card-info">
-                <p class="car__card-title">Газель 3 метра </p>
-                <ul>
-                    <li>Ширина 2 м</li>
-                    <li>Высота 2 м</li>
-                    <li>Объем 16 м³</li>
-                    <li>Грузоподъемность 1,5 т</li>
-                </ul>
-                <button class="button__price"><a href="#">Заказать</a></button>
+        <div class="car__slider-container">
+            <div class="vector__left"></div>
+            <div class="car__slider">
+                <div class="car__card">
+                    <div class="card gazel">
+                        <div class="car__card-info">
+                            <p class="car__card-title">Газель 3 метра </p>
+                            <ul>
+                                <li>Ширина 2 м</li>
+                                <li>Высота 2 м</li>
+                                <li>Объем 16 м³</li>
+                                <li>Грузоподъемность 1,5 т</li>
+                            </ul>
+                            <button class="button__price"><a href="#">Заказать</a></button>
+                        </div>
+                        <div class="check__circle-yellow">
+                            <label>
+                                <input type="radio" class="checkbox">
+                                <span class="fake__yellow"></span>
+                            </label>
+                            <label>
+                                <input type="radio" class="checkbox">
+                                <span class="fake__yellow"></span>
+                            </label>
+                            <label>
+                                <input type="radio" class="checkbox">
+                                <span class="fake__yellow"></span>
+                            </label>
+                        </div>
+                        <div class="text__image">
+                            <p>Газель 3 метра / 1,5 тонны </p>
+                        </div>
+                        <div class="car__image"><img src="img/car.png" alt="car"></div>
+                    </div>
+                    <div class="card van">
+                        <div class="car__card-info">
+                            <p class="car__card-title">Каблук 2 метра</p>
+                            <ul>
+                                <li>Ширина 1.8 м</li>
+                                <li>Высота 1.2 м</li>
+                                <li>Объем 8 м³</li>
+                                <li>Грузоподъемность 0.8 т</li>
+                            </ul>
+                            <button class="button__price"><a href="#">Заказать</a></button>
+                        </div>
+                        <div class="check__circle-yellow">
+                            <label>
+                                <input type="radio" class="checkbox">
+                                <span class="fake__yellow"></span>
+                            </label>
+                            <label>
+                                <input type="radio" class="checkbox">
+                                <span class="fake__yellow"></span>
+                            </label>
+                            <label>
+                                <input type="radio" class="checkbox">
+                                <span class="fake__yellow"></span>
+                            </label>
+                        </div>
+                        <div class="text__image">
+                            <p>Каблук 2 метра / 0.8 тонны </p>
+                        </div>
+                        <div class="car__image"><img src="img/car1.png" alt="car"></div>
+                    </div>
+                    <div class="card truck">
+                        <div class="car__card-info">
+                            <p class="car__card-title">Грузовик 3 метра </p>
+                            <ul>
+                                <li>Ширина 3 м</li>
+                                <li>Высота 3 м</li>
+                                <li>Объем 20 м³</li>
+                                <li>Грузоподъемность 2 т</li>
+                            </ul>
+                            <button class="button__price"><a href="#">Заказать</a></button>
+                        </div>
+                        <div class="check__circle-yellow">
+                            <label>
+                                <input type="radio" class="checkbox">
+                                <span class="fake__yellow"></span>
+                            </label>
+                            <label>
+                                <input type="radio" class="checkbox">
+                                <span class="fake__yellow"></span>
+                            </label>
+                            <label>
+                                <input type="radio" class="checkbox">
+                                <span class="fake__yellow"></span>
+                            </label>
+                        </div>
+                        <div class="text__image">
+                            <p>Грузовик 3 метра / 2 тонны </p>
+                        </div>
+                        <div class="car__image"><img src="img/car2.png" alt="car"></div>
+                    </div>
+                </div>
             </div>
-            <div class="check__circle-yellow">
-                <label>
-                    <input type="checkbox" class="checkbox">
-                    <span class="fake__yellow"></span>
-                </label>
-                <label>
-                    <input type="checkbox" class="checkbox">
-                    <span class="fake__yellow"></span>
-                </label>
-                <label>
-                    <input type="checkbox" class="checkbox">
-                    <span class="fake__yellow"></span>
-                </label>
-                <label>
-                    <input type="checkbox" class="checkbox">
-                    <span class="fake__yellow"></span>
-                </label>
-                <label>
-                    <input type="checkbox" class="checkbox">
-                    <span class="fake__yellow"></span>
-                </label>
-            </div>
-            <div class="text__image">
-                <p>Газель 3 метра / 1,5 тонны </p>
-            </div>
-            <div class="car__image"><img src="img/car.png" alt="car"></div>
-            <div class="vector__right"><img src="img/vector_right.png" alt="vector"></div>
+            <div class="vector__right"></div>
         </div>
     </section>
     <section class="review">
@@ -228,9 +307,13 @@
                     </div>
                     <p>Обращение к вам за помощью в переезде оставило только положительные впечатления. Хотелось
                         отметить замечательного водителя газели Алексея. Были трудности с заездом
-                        во двор, он проявил себя как компетентный
-                        и профессиональный сотрудник, за что ему огромное... </p>
-                    <a href="#">Читать полностью </a>
+
+                        во двор, он проявил себя как <span class="dots"> ...</span>
+                        <span class="more"> компетентный и профессиональный сотрудник, за что ему огромное
+                            спасибо</span>
+                    </p>
+                    <p class="read">Читать полностью </p>
+                    <p class="close">Скрыть</p>
                 </div>
                 <div class="review__text">
                     <h3>Светлана Васильевна </h3>
@@ -244,9 +327,12 @@
                     </div>
                     <p>Сегодня ( 13.09.2019 ) мы переехали. Остались очень довольны, несмотря на то, что к нам опоздали
                         на 1,5 часа. Морально были к этому готовы ( в прошлый переезд в другой фирме тоже опоздали на
-                        час). Водитель заранее позвонил, предупредил, что задерживается.
-                        Когда....</p>
-                    <a href="#">Читать полностью </a>
+                        час). <span class="dots"> ...</span> <span class="more">Водитель заранее позвонил, предупредил,
+                            что задерживается.</span>
+                    </p>
+                    <p class="read">Читать полностью </p>
+                    <p class="close">Скрыть</p>
+
                 </div>
                 <div class="review__text">
                     <h3>Ольга Петрова</h3>
@@ -260,10 +346,13 @@
                     </div>
                     <p>Могу на 100% порекомендовать компанию MOVEE и отметить, что цены фиксированы,
                         что упрощает расчет. Безо всяких заморочек,
-                        в отличии от их конкурентов. Упаковали все качественно и быстро. Все вещи приехали в
-                        сохранности. Особая благодарность
-                        Александру за его... </p>
-                    <a href="#">Читать полностью </a>
+                        в отличии от их конкурентов. Упаковали все качественно и быстро. <span class="dots"> ...</span>
+                        <span class="more">Все вещи приехали в
+                            сохранности. Особая благодарность
+                            Александру за его</span>
+                    </p>
+                    <p class="read">Читать полностью </p>
+                    <p class="close">Скрыть</p>
                 </div>
                 <div class="check__circle">
                     <label>
@@ -298,32 +387,33 @@
             <h2 class="form__title">Закажи переезд прямо сейчас со скидкой %</h2>
             <h2 class="form__title-hidden">Закажи переезд прямо сейчас</h2>
             <p class="under__title">Мы перезвоним в течении 10 секунд</p>
-            <div class="form__name">
-                <input type='text' name='user__name' value="" class='user__info' placeholder='Ваше имя' />
-                <input type='tel' name='user__phone' class='user__info' placeholder='Ваш телефон' />
-            </div>
             <form action="#" method="post" enctype="multipart/form-data" class="form__place">
+                <div class="form__name">
+                    <input type='text' name='user__name' value="" class='user__info field' placeholder='Ваше имя' />
+                    <input type='tel' name='user__phone' class='user__info field' placeholder='Ваш телефон' />
+                </div>
                 <div class="user__place">
                     <div class="region">
                         <p class="form__point">Укажите область</p>
-                        <select class="user__region" placeholder="Например">
-                            <option value="Например: Минская" class="example">Например: Минская</option>
+                        <select class="user__region field" placeholder="Например" required>
+                            <option value="Например: Минская" class="example" disabled>Например: Минская</option>
                             <option value="Минская">Минская</option>
                             <option value="Гомельская">Гомельская</option>
                             <option value="Витебская">Витебская</option>
                         </select>
                     </div>
-                    <div class="city">
+                    <div class="city" required>
                         <p class="form__point">Укажите город</p>
-                        <select class="user__city">
+                        <select class="user__city field">
                             <option value="1">Минск</option>
                             <option value="1">Мозырь</option>
                             <option value="1">Бобруйск</option>
                         </select>
+                        <input type="text" class='user__info input' placeholder='Добавить город'>
                     </div>
                 </div>
                 <p class="form__point">Способ оплаты</p>
-                <div class="payment">
+                <div class="payment field">
                     <label class="radio__button">
                         <input type="radio" name="radio__button">
                         <span class="fake__radio">Наличными курьеру</span>
@@ -339,10 +429,9 @@
                 </div>
                 <div class="service">
                     <div class="up">
-                        <p class="form__point">Дополнительные услуги</p>
-                        <img src="img/up.png" alt="up">
+                        <p class="form__point-dop">Дополнительные услуги</p>
                     </div>
-                    <div class="checkbox__points">
+                    <div class="checkbox__points hidden">
                         <label class="checkbox__form">
                             <input type="checkbox" name="checkbox__form">
                             <span class="fake__checkbox">Вызов замерщика</span>
@@ -366,11 +455,11 @@
                     </div>
                 </div>
                 <div class="timer__form">
-                    <span class="timer">05:37:25</span>
+                    <div class="timer"></div>
                     <div class="order__form">
                         <div class="button__form">
-                            <button class="button__order"><a href="#">Заказать со скидой</a></button>
-                            <button class="button__adaptive"><a href="#">Перезвонить мне</a></button>
+                            <button type="submit" class="button__order">Заказать со скидой</button>
+                            <button type="submit" class="button__adaptive">Перезвонить мне</button>
                         </div>
                         <label>
                             <input checked type="checkbox" name="checkbox__agree">
@@ -422,6 +511,7 @@
             </div>
         </div>
     </section>
+    <script src="./js/code.js"></script>
 </body>
 
 </html>
