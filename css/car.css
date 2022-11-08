@@ -66,9 +66,7 @@
 .card {
     max-width: 1024px;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
-    /* height: 25rem; */
     min-width: 64rem;
 }
 

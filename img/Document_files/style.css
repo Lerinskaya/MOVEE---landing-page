@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 72rem;
+    height: 20rem;
+    margin: 0 auto;
+    background-color: rgb(244, 229, 176);
+    position: relative;
+    border-radius: 2rem;
+}
+
+.right {
+    cursor: pointer;
+    position: relative;
+    margin-left: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: aliceblue;
+    border-radius: 50%;
+    width: 7rem;
+}
+
+.right::after {
+    content: "";
+    width: 1rem;
+    height: 0.1rem;
+    background-color: black;
+    position: absolute;
+    transform: rotate(130deg);
+    bottom: 1.8rem;
+    left: 1rem;
+    z-index: 2;
+}
+
+.right::before {
+    content: "";
+    width: 1rem;
+    height: 0.1rem;
+    background-color: black;
+    position: absolute;
+    top: 9.3rem;
+    transform: rotate(-130deg);
+    z-index: 2;
+}
+
+.left {
+    cursor: pointer;
+    position: relative;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    background-color: aliceblue;
+    width: 7rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-top: 8rem;
+}
+
+.disabled {
+    background-color: grey;
+}
+
+.left::before {
+    content: "";
+    width: 1rem;
+    height: 0.1rem;
+    background-color: black;
+    position: absolute;
+    transform: rotate(50deg);
+    left: 1rem;
+    bottom: 1.1rem;
+    z-index: 2;
+}
+
+.left::after {
+    content: "";
+    width: 1rem;
+    height: 0.1rem;
+    background-color: black;
+    position: absolute;
+    transform: rotate(130deg);
+    bottom: 1.8rem;
+    left: 1rem;
+    z-index: 2;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: .6s;
+    align-items: center;
+    left: 0;
+    max-width: 120rem;
+}
+
+.slider__item {
+    width: 11rem;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    margin-right: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider__item img {
+    padding: 1.5rem;
+    width: 10rem;
+}
