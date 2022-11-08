@@ -31,14 +31,13 @@
     font-size: 1.25rem;
     font-weight: 500;
     text-align: center;
-    margin-right: 1.25rem;
+    margin: 1.25rem;
     border: 1px solid var(--grey);
 }
 
 .car:hover {
     border: 1px solid var(--yellow);
 }
-
 
 .car__slider {
     display: flex;
@@ -67,21 +66,13 @@
 .card {
     max-width: 1024px;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
-    /* height: 25rem; */
     min-width: 64rem;
 }
 
 .card ul {
     margin: 0;
     padding: 1rem;
-
-.car__card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
 }
 
 .car__card-title {
@@ -112,7 +103,6 @@
 .car__image img {
     width: 100%;
 }
-
 
 .vector__right::after {
     content: "";
@@ -189,15 +179,12 @@
         font-size: 1.25rem;
     }
 
-
     .card {
         flex-flow: column-reverse;
         /* min-height: 714px; */
         max-width: 23rem;
         margin-left: -10rem;
         margin-right: 10rem;
-    .car__card {
-        flex-flow: column-reverse;
     }
 
     .car__card-info button {
@@ -253,8 +240,6 @@
         border: none;
         border-bottom: 0.0625rem solid var(--yellow);
         width: 5rem;
-        width: 5.5rem;
-        max-width: none;
     }
 
     .car__text {
@@ -263,7 +248,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .car__text {
         font-size: 1.2rem;
         margin-bottom: 0.85rem;
@@ -285,7 +270,6 @@
     }
 }
 
-
 @media (max-width: 600px) {
     .car__image {
         max-width: 25rem;
@@ -301,6 +285,7 @@
     .car {
         font-size: 0.9rem;
     }
+
     .card {
         margin-left: -22rem;
         margin-right: 22rem;
@@ -309,6 +294,7 @@
     .car__image {
         max-width: 17rem;
     }
+
     .car_head {
         font-size: 1.25rem;
     }
