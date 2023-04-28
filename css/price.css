@@ -130,20 +130,21 @@
 
 @media (max-width: 990px) {
 
-    .price__card,
-    .price__card__second {
-        max-width: 16rem;
-        margin: 1rem;
+    .all__prices {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
+    .price__card,
     .price__card__second {
-        max-width: 16rem;
+        max-width: 35rem;
         margin: 1rem;
     }
 
     .price__card p,
     .price__card__second p {
-        margin-bottom: 1rem;
+        margin-bottom: 0;
     }
 
     .price__card__second {
@@ -154,8 +155,8 @@
 
     .room,
     .price__appart {
-        font-size: 1rem;
-        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     .button__price {
@@ -164,12 +165,6 @@
 }
 
 @media (max-width: 880px) {
-
-    .price__card,
-    .price__card__second {
-        max-width: 16rem;
-    }
-
     .question__field {
         margin: 2rem 1rem;
     }
@@ -182,30 +177,8 @@
         max-width: 11rem;
     }
 
-    .price__info p {
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 850px) {
-
-    .price__card,
-    .price__card__second {
-        max-width: 14rem;
-    }
-
-    .room,
-    .price__appart {
-        font-size: 1rem;
-        padding: 1rem;
-    }
-
-    .price__appart {
+   .price__appart {
         margin-top: 1rem;
-    }
-
-    .price__info p {
-        font-size: 0.7rem;
     }
 }
 

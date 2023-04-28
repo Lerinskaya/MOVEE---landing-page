@@ -164,6 +164,12 @@
     z-index: 2;
 }
 
+@media (max-width: 990px) {
+    .car__image {
+        max-width: 30rem;
+    }
+}
+
 @media (max-width: 768px) {
 
     .car__card-info ul,
@@ -181,7 +187,6 @@
 
     .card {
         flex-flow: column-reverse;
-        /* min-height: 714px; */
         max-width: 23rem;
         margin-left: -10rem;
         margin-right: 10rem;
@@ -262,7 +267,7 @@
     }
 
     .car__image {
-        max-width: 28rem;
+        max-width: 25rem;
     }
 
     .car__kind {
@@ -271,13 +276,19 @@
 }
 
 @media (max-width: 600px) {
-    .car__image {
-        max-width: 25rem;
-    }
 
     .card {
         margin-left: -17rem;
-        margin-right: 17rem;
+    }
+
+    .car__image {
+        max-width: 17rem;
+    }
+}
+
+@media (max-width: 365px) {
+    .card {
+        margin-left: -20rem;
     }
 }
 
@@ -288,11 +299,6 @@
 
     .card {
         margin-left: -22rem;
-        margin-right: 22rem;
-    }
-
-    .car__image {
-        max-width: 17rem;
     }
 
     .car_head {

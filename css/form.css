@@ -300,10 +300,6 @@
     .user__region {
         width: 16.75rem;
     }
-
-    .map {
-        padding-bottom: 36.25%;
-    }
 }
 
 @media (max-width: 710px) {
