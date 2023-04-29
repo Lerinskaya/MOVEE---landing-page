@@ -11,7 +11,8 @@
 .review__block {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3.6rem;
+    min-height: 21rem;
+    gap: 4rem;
 }
 
 .review__title {
@@ -24,10 +25,6 @@
 }
 
 .review__text {
-    margin-right: 1.25rem;
-}
-
-.review__text p {
     max-width: 26rem;
 }
 
@@ -91,7 +88,19 @@
     text-decoration: underline;
 }
 
+@media (max-width: 1064px) {
+
+    .review__text {
+        max-width: 16rem;
+    }
+}
+
 @media (max-width: 768px) {
+
+    .review__text {
+        max-width: 30rem;
+    }
+
     .check__circle-yellow {
         display: flex;
         justify-content: center;
@@ -133,6 +142,8 @@
         flex-flow: column;
         margin: 0 2rem;
         justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
     }
 
     .review__text {
